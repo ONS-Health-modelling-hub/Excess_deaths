@@ -10,7 +10,7 @@ All code was developed using R version 4.1.3.
 ## 2. Process
 1. Create a new local folder (e.g. 'D:\ons_excess_deaths') - this will be your working directory
 2. Download 'ons_weekly_ed.R' and 'ons_monthly_ed.R' from this GitHub repo into your working directory
-3. Download the dataset 'dataset_20240220.xlsx' accompanying the methodology article into your working directory
+3. Download the dataset [dataset_20240220.xlsx](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/datasets/estimatingexcessdeathsintheukmethodologychanges) accompanying the methodology article into your working directory
 4. Amend the parameters at the top of 'ons_weekly_ed.R' and/or 'ons_monthly_ed.R' (see below)
 5. Run 'ons_weekly_ed.R' (for weekly estimates) or 'ons_monthly_ed.R' (for monthly estimates) in RStudio
 
