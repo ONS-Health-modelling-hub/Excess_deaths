@@ -16,7 +16,7 @@ ref_period = 202312            ## reference month for which to calculate ED (yyy
 ################### DATA PREP - PRE-MODELLING ###################
 
 ### read in dataset
-deaths <- read.xlsx(paste0(dir, "\\dataset_20240220.xlsx"), sheet="Table_2")
+deaths <- read.xlsx(paste0(dir, "\\dataset20240220.xlsx"), sheet="Table_2")
 
 ### get rid of info rows and assign column names
 deaths <- deaths[-(1:4),]
