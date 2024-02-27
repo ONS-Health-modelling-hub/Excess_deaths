@@ -10,12 +10,12 @@ All code was developed using R version 4.1.3.
 ## 2. Process
 1. Create a new local folder (e.g. 'D:\ons_excess_deaths') - this will be your working directory
 2. Download 'ons_weekly_ed.R' and 'ons_monthly_ed.R' from this GitHub repo into your working directory
-3. Download the dataset [dataset_20240220.xlsx](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/datasets/estimatingexcessdeathsintheukmethodologychanges) accompanying the methodology article into your working directory
+3. Download the dataset [dataset20240220.xlsx](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/datasets/estimatingexcessdeathsintheukmethodologychanges) accompanying the methodology article into your working directory
 4. Amend the parameters at the top of 'ons_weekly_ed.R' and/or 'ons_monthly_ed.R' (see below)
 5. Run 'ons_weekly_ed.R' (for weekly estimates) or 'ons_monthly_ed.R' (for monthly estimates) in RStudio
 
 ## 3. Parameters
-* `dir`: the path of your working directory (where the input dataset 'dataset_20240220.xlsx' is saved and your outputs will be directed); this should be entered as a character string, is case sensitive, and should be specified using single forward slashes or double back slashes, e.g. "D:/ons_excess_deaths" or "D:\\ons_excess_deaths", not "D:\ons_excess_deaths"
+* `dir`: the path of your working directory (where the input dataset 'dataset20240220.xlsx' is saved and your outputs will be directed); this should be entered as a character string, is case sensitive, and should be specified using single forward slashes or double back slashes, e.g. "D:/ons_excess_deaths" or "D:\\ons_excess_deaths", not "D:\ons_excess_deaths"
 * `ref_period`: the reference week (for 'ons_weekly_ed.R') or month (for 'ons_monthly_ed.R') for which you want to estimate the number of expected and excess deaths; this should be a single numeric value (only one period is allowed per run of the code), entered in the format yyyyww or yyyymm, e.g. 202301 for Week 1 or January 2023
 
 ## 4. Outputs
