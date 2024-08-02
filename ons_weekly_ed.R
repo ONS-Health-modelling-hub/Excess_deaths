@@ -81,7 +81,7 @@ weekly.modelling <- function(df) {
   trend_end <- max(df$trend[df$year==floor(ref_year-(51/52)) &
                               df$week==ifelse(ref_week==53, 52, ref_week)])
 
-  trend_start <- min(df$trend[df$year==floor(ref_year-5-(51/52)) &
+  trend_start <- min(df$trend[df$year==ifelse(ref_week %in% 52:53, floor(ref_year-5-(51/52))+1, floor(ref_year-5-(51/52))) &
                                 df$week==ifelse(ref_week %in% 52:53, 1, ref_week+1)])
 
   df_fitting <- df[df$trend %in% trend_start:trend_end,]
